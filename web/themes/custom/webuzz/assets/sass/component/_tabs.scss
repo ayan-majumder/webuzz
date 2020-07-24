@@ -1,0 +1,32 @@
+ul {
+  &.tabs {
+    margin: 0;
+    > li {
+      margin-right: 0;
+    }
+    a {
+      padding: $padding-lg $padding-xl $padding-lg+$padding-sm $padding-xl;
+      background: none;
+      color: $charcoal;
+      &:hover,
+      &:focus {
+        background: $lighter-gray;
+        text-decoration: none;
+        color: $charcoal;
+      }
+      &.is-active {
+        background: none;
+        position: relative;
+        &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          height: $padding-sm;
+          width: 100%;
+          background-color: $red;
+        }
+      }
+    }
+  }
+}

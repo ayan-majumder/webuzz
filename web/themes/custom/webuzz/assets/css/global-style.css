@@ -1,0 +1,188 @@
+/* Import base configs and variables */
+/* colors */
+/* font-size */
+/* padding, margins (gaps) */
+/* Breakpoints */
+/* Import all functions and mixins */
+/* The default font size for html is 16px */
+/* Function to convert px value into rem */
+/* You can replace rem with any other value you want (rem is most preferred value for web) */
+/* Usable functions and operations */
+/* global border-radius */
+/* Import all base elements */
+/* All Base elements and generic theming */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html,
+body {
+  font-family: 'Poppins', serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #393939; }
+
+a {
+  text-decoration: none;
+  color: #393939; }
+  a:hover, a:active, a:focus {
+    text-decoration: none;
+    outline: none;
+    color: #ff4949; }
+
+h1,
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+  margin: 10px 0 20px;
+  padding-bottom: 10px; }
+
+h1 {
+  font-size: 42px; }
+
+h2 {
+  font-size: 36px; }
+
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', serif;
+  font-weight: 600; }
+
+h3 {
+  font-size: 24px; }
+
+h4 {
+  font-size: 18px; }
+
+h5 {
+  font-size: 16px;
+  font-weight: 500; }
+
+h6 {
+  font-size: 14px;
+  font-weight: 500; }
+
+p {
+  margin-bottom: 10px; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+ul,
+ol {
+  margin: 0;
+  padding: 0; }
+
+label,
+.label {
+  color: #393939;
+  font-weight: 600;
+  font-size: 14px; }
+
+/* Import global component */
+.card-container {
+  overflow: hidden;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column; }
+  .card-container .card-header {
+    display: block;
+    padding: 15px 20px;
+    background-color: #ff4949;
+    color: #ffffff; }
+  .card-container .card-body {
+    display: block;
+    padding: 20px;
+    background-color: #eeeeee; }
+
+header {
+  background-color: #fafafa; }
+
+ul.tabs {
+  margin: 0; }
+  ul.tabs > li {
+    margin-right: 0; }
+  ul.tabs a {
+    padding: 10px 20px 15px 20px;
+    background: none;
+    color: #393939; }
+    ul.tabs a:hover, ul.tabs a:focus {
+      background: #eeeeee;
+      text-decoration: none;
+      color: #393939; }
+    ul.tabs a.is-active {
+      background: none;
+      position: relative; }
+      ul.tabs a.is-active::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 5px;
+        width: 100%;
+        background-color: #ff4949; }
+
+.form-item {
+  margin: 20px 0; }
+  .form-item label {
+    font-weight: 600; }
+  .form-item input[type=text],
+  .form-item input[type=password],
+  .form-item input[type=email],
+  .form-item textarea,
+  .form-item select {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 0;
+    display: block; }
+    .form-item input[type=text]:hover, .form-item input[type=text]:focus,
+    .form-item input[type=password]:hover,
+    .form-item input[type=password]:focus,
+    .form-item input[type=email]:hover,
+    .form-item input[type=email]:focus,
+    .form-item textarea:hover,
+    .form-item textarea:focus,
+    .form-item select:hover,
+    .form-item select:focus {
+      outline: none; }
+  .form-item .description {
+    margin-top: 5px; }
+  .form-item.form-type-checkbox .description {
+    margin-left: 0; }
+
+details {
+  padding: 5px 10px; }
+  details:focus {
+    outline: none; }
+  details summary:focus {
+    outline: none; }
+
+button,
+input[type=button],
+input[type=reset],
+input[type=submit] {
+  padding: 10px 20px;
+  border-radius: 0;
+  border: 0;
+  outline: none;
+  background-color: #ff4949;
+  transition: 0.3s linear;
+  color: #ffffff; }
+  button:hover, button:focus,
+  input[type=button]:hover,
+  input[type=button]:focus,
+  input[type=reset]:hover,
+  input[type=reset]:focus,
+  input[type=submit]:hover,
+  input[type=submit]:focus {
+    background-color: #bc3636; }
+
+.breadcrumb {
+  margin: 20px 0 10px;
+  background: none;
+  padding: 0; }

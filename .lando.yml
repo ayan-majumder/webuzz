@@ -1,0 +1,9 @@
+name: webuzz
+recipe: drupal8
+config:
+  php:  '7.3'
+  webroot: web
+  xdebug: true
+services:
+  pma:
+    type: phpmyadmin

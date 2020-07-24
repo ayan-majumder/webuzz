@@ -1,0 +1,17 @@
+global-styling:
+  css:
+    component:
+      //fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap: {type: external}
+      //fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap: {type: external}
+      //stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css: {type: external}
+      //maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css: {type: external}
+      //maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js: {type: external}
+      //cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css: {type: external}
+      //cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js: {type: external}
+      assets/minified/css/global-style-min.css: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal.ajax
+    - core/drupal
+    - core/drupalSettings

@@ -1,0 +1,20 @@
+<?php
+
+use Drupal\Component\Utility\Xss;
+use Drupal\Core\Template\Attribute;
+
+function webuzz_preprocess_html(&$variables) {
+  // Add information about the number of sidebars.
+}
+
+function webuzz_preprocess_page(&$variables) {
+  if (!empty($variables['page']['sidebar_first'])) {
+    $variables['attributes']['class'][] = 'layout-one-sidebar';
+    $variables['attributes']['class'][] = 'layout-sidebar-first';
+    $variables['page']['main_content_width'] = 9;
+  }
+  else {
+    $variables['attributes']['class'][] = 'layout-no-sidebars';
+    $variables['page']['main_content_width'] = 12;
+  }
+}

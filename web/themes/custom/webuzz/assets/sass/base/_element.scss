@@ -1,0 +1,91 @@
+/* All Base elements and generic theming */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Poppins', serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: $charcoal;
+}
+
+a {
+  text-decoration: none;
+  color: $charcoal;
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+    outline: none;
+    color: $red;
+  }
+}
+
+h1,
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+  margin: $padding-lg 0 $padding-xl;
+  padding-bottom: $padding-lg;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', serif;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+h6 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+p {
+  margin-bottom: $padding-lg;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+label,
+.label {
+  color: $charcoal;
+  font-weight: 600;
+  font-size: 14px;
+}

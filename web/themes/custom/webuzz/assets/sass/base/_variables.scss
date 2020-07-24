@@ -1,0 +1,46 @@
+/* colors */
+
+$black: #000000;
+$charcoal: #393939;
+$white: #ffffff;
+$lightest-gray: #fafafa;
+$lighter-gray: #eeeeee;
+$light-gray: #cccccc;
+$dim-gray: #e5e5e5;
+$gray: #777777;
+$dark-gray: #656565;
+$darkest-gray: #4f4f4f;
+$red: #ff4949;
+$light-red: #d35151;
+$dark-red: #bc3636;
+$darkest-red: #972727;
+
+/* font-size */
+$font-size-10: 10px;
+$font-size-12: 12px;
+$font-size-14: 14px;
+$font-size-16: 16px;
+$font-size-18: 18px;
+$font-size-20: 20px;
+$font-size-24: 24px;
+$font-size-28: 28px;
+$font-size-32: 32px;
+$font-size-36: 36px;
+$font-size-42: 42px;
+
+/* padding, margins (gaps) */
+$padding-xs: 2px;
+$padding-sm: 5px;
+$padding-lg: 10px;
+$padding-xl: 20px;
+$padding-xxl: 30px;
+$padding-xxxl: 40px;
+
+/* Breakpoints */
+$screen-xs: 420px;
+$screen-sm: 480px;
+$screen-asm: 540px;
+$screen-md: 767px;
+$screen-amd: 991px;
+$screen-lg: 1199px;
+$screen-xl: 1400px;

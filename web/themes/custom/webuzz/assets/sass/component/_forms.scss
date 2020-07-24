@@ -1,0 +1,47 @@
+.form-item {
+  margin: $padding-xl 0;
+  label {
+    font-weight: 600;
+  }
+  input[type=text],
+  input[type=password],
+  input[type=email],
+  textarea,
+  select {
+    padding: $padding-lg;
+    border: 1px solid $light-gray;
+    border-radius: 0;
+    display: block;
+    &:hover,
+    &:focus {
+      outline: none;
+    }
+  }
+  .description {
+    margin-top: $padding-sm;
+  }
+  &.form-type-checkbox {
+    .description {
+      margin-left: 0;
+    }
+  }
+}
+
+details {
+  padding: $padding-sm $padding-lg;
+  &:focus {
+    outline: none;
+  }
+  summary {
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+button,
+input[type=button],
+input[type=reset],
+input[type=submit] {
+  @include button-primary;
+}
